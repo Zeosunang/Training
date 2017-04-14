@@ -3,14 +3,14 @@ package de.zeosunang.config;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
- * Created by Zeosunang on 10.03.2017.
+ * Replacement for web.xml
  */
 public class ServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return null;
+        return new Class[] { SecurityConfig.class };
     }
 
     @Override

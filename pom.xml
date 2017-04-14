@@ -13,6 +13,8 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<spring.version>4.3.7.RELEASE</spring.version>
+		<spring.security.version>4.2.2.RELEASE</spring.security.version>
+		<hibernate.version>5.2.8.Final</hibernate.version>
 	</properties>
 
 	<dependencies>
@@ -45,6 +47,18 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+
 		<!-- Persistence -->
 
         <dependency>
@@ -62,7 +76,13 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
-            <version>5.2.8.Final</version>
+            <version>${hibernate.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-java8</artifactId>
+			<version>${hibernate.version}</version>
 		</dependency>
 
 		<dependency>
@@ -92,7 +112,13 @@
 			<version>2.2</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+		<groupId>jstl</groupId>
+		<artifactId>jstl</artifactId>
+		<version>1.2</version>
+	</dependency>
 	</dependencies>
+
 
 	<repositories>
 		<repository>

@@ -7,7 +7,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.base22" level="TRACE"/>
+    <logger name="de.zeosunang" level="TRACE"/>
 
 
     <root level="debug">
